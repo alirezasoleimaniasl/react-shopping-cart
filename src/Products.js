@@ -45,11 +45,11 @@ function Products({BuyItems,SetBuyItems}){
       }, [orderList]);
 
     return(
-        <div>
+        <div className="products">
             {
             products.map((product) => {
                 return(
-                <div key={product.id}>
+                <div key={product.id} className="box">
                     <div>Name: {product.name}</div>
                     <div>Price: {product.price}</div>
                     <button onClick = {() => handleMosbat(product.id)}>+</button>

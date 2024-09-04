@@ -32,6 +32,34 @@
   color: #61dafb;
 }
 
+.button{
+  width: 3rem;
+  font-size:xx-large;
+}
+
+.box{
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.products{
+  display:flex;
+  height:25vh
+}
+
+.card{
+  display:flex;
+  width: 90vw;
+  justify-content: space-around;
+  height: 25vh;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

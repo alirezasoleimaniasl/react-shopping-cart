@@ -1,7 +1,17 @@
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Shopping-cart1](https://github.com/user-attachments/assets/43eb324a-864e-486c-9107-a21ca56a32b4)
+This ap has tree section
+### App.js :
+It includes tha main section.
 
+### Cart.js :
+It includes the cart section.
+
+### Products.js 
+It has all list of products here
 ## Available Scripts
 
 In the project directory, you can run:

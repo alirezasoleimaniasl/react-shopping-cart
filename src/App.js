@@ -1,7 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Products from './Products';
+import Cart from './Cart';
 
 function App() {
+  const [BuyItems, SetBuyItems] = useState([
+    { id: 1, name: "kif", amount: 0, TotalPrice: 0 },
+    { id: 2, name: "kooleh", amount: 0, TotalPrice: 0 },
+    { id: 3, name: "kafsh", amount: 0, TotalPrice: 0 },
+  ]);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +26,17 @@ function App() {
         >
           Learn React
         </a>
+
+        <div>
+          <h2>Carts</h2>
+          <Cart BuyItems = {BuyItems}/>
+        </div>
+
+        <div>
+          <h2>Products</h2>
+          <Products BuyItems = {BuyItems} SetBuyItems = {SetBuyItems}/>
+        </div>
+        
       </header>
     </div>
   );
